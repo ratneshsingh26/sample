@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utils.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;900&family=Righteous&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="" href="writing.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;900&family=Righteous&display=swap" rel="stylesheet">
+  <title>bLOG-iT</title>
+</head>
+<script src="javascript.js"></script>
+<body>
+  <nav class="navigation max-width-1 m-auto">
+    <div class="nav-left">
+      <h1> <span class="logo">bLOG-iT!</span></h1>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://guptaishita11.github.io/website/">About</a></li>
+        <li><a href="https://guptaishita11.github.io/Resume/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input type="text" id="gsearch" class="form-input" placeholder="Search article">
+      <button type="button" name="button" class="btn">Search</button>
+    </div>
+  </nav>
+  <div class="content max-width-1 m-auto">
+    <div class="content-left">
+      <h2>Welcome to bLOG-iT!</h2>
+      <h3>You can share your everyday blogs here.</h3>
+    </div>
+    <div class="content-right">
+      <img class="content-right img" src="Image1.png" alt="blogger">
+    </div>
+  </div>
+  <form class="" action="index.html" onsubmit="submitFunction()" method="post">
+    <hr class="max-width-1 m-auto">
+    <div class="article max-width-2 m-auto">
+      <ul>
+        <li>
+          <h2>Enter a tittle for your blog:</h2>
+        </li>
+        <li>
+          <input type="text" name="" id="tarticle" required class="form-input " placeholder="Today is..." value="">
+        </li>
+        <li>
+          <h3>Enter date for the blog:</h3>
+        </li>
+        <input type="date" class="form-input" id="darticle" required name="" value="" name="text ">
+        </li>
+        <li>
+          <h3>Enter the content for the blog:</h3>
+        </li>
+        <li>
+          <textarea rows="20px" class="form-input " id="cont-article" required cols="50px" name="text" placeholder="Enter your article"></textarea>
+        </li>
+        <li>
+          <button type="submit" name="button" id="submit" class="btn">Submit article</button>
+        </li>
+      </ul>
+      <br>
+    </div>
+  </form>
+  <hr class="max-width-1 m-auto">
+  <div class="footer max-width-2 m-auto">
+    Made by-Ishita Gupta
+  </div>
+</body>
+<script>
+  function submitFunction() {
+    window.alert("You submitted your article");
+  }
+
+</script>
+
+</html>
